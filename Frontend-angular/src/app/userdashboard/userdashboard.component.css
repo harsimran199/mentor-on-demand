@@ -1,0 +1,109 @@
+*
+{
+	margin: 0px;
+	padding: 0px;
+	
+}
+body
+{
+	background-image: url("/assets/pattern.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+}
+#sidebar
+{
+	position: fixed;
+	width: 200px;
+	height: 100%;
+	background-color: #68A564;
+	top: 0px;
+	left: 0px;
+	transition: all 400ms linear;
+}
+#sidebar.active
+{
+	left: 0px;
+	top: 0px;
+}
+#sidebar ul li
+{
+	color: rgba(230,230,230,0.9);
+	list-style: none;
+	padding: 12px 15px ;
+	margin: 10px 8px;
+	border-bottom:1px solid rgba(100,100,100,0.5); 
+	font-size: 14px;
+    font-family: "Helvetica";
+
+    
+}
+#sidebar .toggle-btn
+{
+	position: absolute;
+	left:230px;
+	top:20px;
+}
+#sidebar .toggle-btn span
+{
+	display: block;
+	width: 25px;
+	height: 5px;
+	background: black;
+	margin: 3px 0px;
+}
+h1
+{
+	text-align: center;
+	margin-top: 150px;
+	font-size: 55px;
+	font-family: ;
+	color: black;
+	font-family: "cooper black";
+}
+.log-btn
+{
+	/*margin-top: 3px;*/
+	top: 20px;
+    margin-left: 90vw;
+    position: fixed;
+    outline: none;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #68A564;
+    font-size: 20px;
+    font-family: "Helvetica";
+    color: white;
+}
+.log-btn:hover
+{
+	color: black;
+}
+.logo
+{
+	margin: 20px;
+	font-size: 30px;
+	color: white;
+	font-family: "forte";
+}
+.btn
+{
+	outline: none;
+	padding: 5px;
+	border-radius: 20px;
+	border:none;
+	font-size: 15px;
+	cursor: pointer;
+	background-color: white;
+	width: 150px;
+	background-color: #68A564;
+	color: white;
+}
+.btn:hover
+{
+	background-color: white;
+	color: #68A564;
+}

@@ -1,0 +1,90 @@
+<html>
+<head>
+<title>Bootstrap Example</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+<div class="container-fluid">
+  <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+    </button>
+    <a class="navbar-brand" href="/admindashboard">Mentor On Demand</a>
+  </div>
+  <div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="/add">Add User</a></li>
+        <li><a href="/addmentor">Add Mentor</a></li>
+        <li><a href="/addskill">Add Skills</a></li>
+        <li><a href="/addtraining">Add Training</a></li>
+        <li><a href="/addtechnology">Add Technology</a></li>
+        <li><a href="/addpayment">Add Payment</a></li>
+
+
+        
+      </ul> 
+              <ul class="nav navbar-nav navbar-right">
+                 <li><a href=""><span class="glyphicon glyphicon-log-out"></span>Logout</a></li></ul>
+              <form class="navbar-form navbar-right" action="SearchResults.html">
+                  <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Search" name="search">
+                          <div class="input-group-btn">
+                              <button class="btn btn-default" type="submit">
+                                  <i class="glyphicon glyphicon-search"></i>
+                              </button>
+                          </div>
+                  </div>
+          </form>
+      </div>
+      </div>
+      </div>
+    </nav>
+
+<br>
+<br>
+<br>
+    
+        <div class="row">
+              
+    
+          <div class="col-md-6" style="margin-left: 25%;margin-top: 5%;">
+              <h2 class="text-center">Add Technology</h2>
+              <form>
+                <div class="form-group">
+                  <label for="techName">Technology Name:</label>
+                  <input type="text" [(ngModel)]="technology.techName" placeholder="Tech Name" name="techName" class="form-control" id="techName">
+                </div>
+              
+                <div class="form-group">
+                  <label for="description">Description</label>
+                  <input [(ngModel)]="technology.description" placeholder="Description" name="description" class="form-control" id="description">
+                </div>
+              
+                <div class="form-group">
+                  <label for="createdAt">Created Date:</label>
+                  <input type ="datetime" [(ngModel)]="technology.createdAt" placeholder="createdAt" name="createdAt" class="form-control" id="createdAt">
+                </div>
+              
+                <div class="form-group">
+                  <label for="updatedAt">Updated Date</label>
+                  <input  type="datetime" [(ngModel)]="technology.updatedAt" placeholder="updatedDate" name="updatedAt" class="form-control" id="updatedAt">
+                </div>
+              
+                <button class="btn btn-success" (click)="createTechnology()">Create</button>
+              </form>
+</div>
+
+</div>
+</body>
+</html>
+
+

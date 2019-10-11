@@ -1,0 +1,39 @@
+import {Injectable} from '@angular/core';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+
+import { User } from '../models/user.model';
+
+
+const httpOptions = {
+  headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+};
+
+@Injectable()
+export class UserprofileService {
+
+  constructor(private http:HttpClient) {}
+
+  private userUrl = 'http://localhost:8071/users';
+  //private userUrl = '/api';
+
+  public getUsers() {
+    return this.http.get<User[]>(this.userUrl);
+  }
+  public getById(user) {
+        return this.http.get<User>(this.userUrl+ "/"+ user.id);
+    }
+
+  public deleteUser(user) {
+    return this.http.delete(this.userUrl + "/"+ user.id);
+  }
+
+  public createUser(user) {
+    return this.http.post<User>(this.userUrl, user);
+  }
+
+public updateUser(user) {
+console.log('In service user =',user)
+    return this.http.put<User>(this.userUrl  + "/"+ user.id,user);
+  }
+
+}

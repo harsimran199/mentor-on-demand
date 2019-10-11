@@ -1,0 +1,258 @@
+
+ <!DOCTYPE html>
+
+ <html lang="en">
+ 
+ <head>
+     <meta charset="utf-8" />
+     <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/apple-icon.png">
+     <link rel="icon" type="image/png" href="/assets/img/favicon.ico">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+     <title>Klife</title>
+     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+     <!--     Fonts and icons     -->
+     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+     <!-- CSS Files -->
+     <link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
+     <link href="/assets/css/light-bootstrap-dashboard.css?v=2.0.0 " rel="stylesheet" />
+     <!-- CSS Just for demo purpose, don't include it in your project -->
+     <link href="/assets/css/demo.css" rel="stylesheet" />
+     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+    p{
+        color: black;
+    }
+</style>
+ </head>
+ 
+<body>
+     <div class="wrapper">
+         <div class="sidebar">
+            
+             <div class="sidebar-wrapper" style="background-image: url(/assets/img/sidebar-5.jpg);">
+                 <div class="logo">
+                     <a href="/klife" class="simple-text">
+                         Klife
+                     </a>
+                 </div>
+                 <ul class="nav">
+                     <li class="nav-item active">
+                         <a class="nav-link" href="/admindashboard">
+                             <i class="nc-icon nc-chart-pie-35"></i>
+                             <p>Dashboard</p>
+                         </a>
+                     </li>
+
+
+                     <li>
+                        
+                    <div class="w3-dropdown-hover nav-link">
+                     <i class="nc-icon nc-circle-09 "></i>
+                     <p>
+                           User
+                     </p>
+                     <div class="w3-dropdown-content w3-bar-block w3-border">
+                         <a href="/add" class="w3-bar-item w3-button w3-green">Add User</a>
+                         <a href="/users" class="w3-bar-item w3-button w3-red">Delete User</a>
+                     </div>
+                   </div>
+                    </li>
+
+
+                <li>
+                        
+                    <div class="w3-dropdown-hover nav-link">
+                     <i class="nc-icon nc-circle-09 "></i>
+                     <p>
+                           Mentor
+                     </p>
+                     <div class="w3-dropdown-content w3-bar-block w3-border">
+                         <a href="/addmentor" class="w3-bar-item w3-button w3-green">Add Mentor</a>
+                         <a href="/mentors" class="w3-bar-item w3-button w3-red">Delete Mentor</a>
+                     </div>
+                   </div>
+                    </li>
+                
+
+                      <li>
+                        
+                    <div class="w3-dropdown-hover nav-link">
+                     <i class="nc-icon nc-notes "></i>
+                     <p>
+                           Skills
+                     </p>
+                     <div class="w3-dropdown-content w3-bar-block w3-border">
+                         <a href="/addskill" class="w3-bar-item w3-button w3-green">Add Skills</a>
+                         <a href="/deleteskill" class="w3-bar-item w3-button w3-red">Delete Skills</a>
+                     </div>
+                   </div>
+                    </li>
+
+                    <li>
+                        
+                    <div class="w3-dropdown-hover nav-link">
+                     <i class="nc-icon nc-atom "></i>
+                     <p>
+                           Technology
+                     </p>
+                     <div class="w3-dropdown-content w3-bar-block w3-border">
+                         <a href="/addtechnology" class="w3-bar-item w3-button w3-green">Add Technology</a>
+                         <a href="/technologys" class="w3-bar-item w3-button w3-red">Delete Technology</a>
+                     </div>
+                   </div>
+                    </li>
+
+                    <li>
+                        
+                    <div class="w3-dropdown-hover nav-link">
+                     <i class="nc-icon nc-bank "></i>
+                     <p>
+                           Payments
+                     </p>
+                     <div class="w3-dropdown-content w3-bar-block w3-border">
+                         <a href="/addpayment" class="w3-bar-item w3-button w3-green">Add Payments</a>
+                         <a href="/deletepayment" class="w3-bar-item w3-button w3-red">Delete Payments</a>
+                     </div>
+                   </div>
+                    </li>
+                
+
+                 <li>
+                        
+                    <div class="w3-dropdown-hover nav-link">
+                     <i class="nc-icon nc-bulb-63"></i>
+                     <p>
+                           Training
+                     </p>
+                     <div class="w3-dropdown-content w3-bar-block w3-border">
+                         <a href="/addtraining" class="w3-bar-item w3-button w3-green">Add Training</a>
+                         <a href="/trainings" class="w3-bar-item w3-button w3-red">Delete Training</a>
+                     </div>
+                   </div>
+                    </li>
+                                  
+                 </ul>
+             </div>
+         </div>
+         <div class="main-panel">
+             <!-- Navbar -->
+             <nav class="navbar navbar-expand-lg " color-on-scroll="500">
+                 <div class="container-fluid">
+                     <a class="navbar-brand" href="#pablo"> Dashboard </a>
+                     <button href="" class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+                         <span class="navbar-toggler-bar burger-lines"></span>
+                         <span class="navbar-toggler-bar burger-lines"></span>
+                         <span class="navbar-toggler-bar burger-lines"></span>
+                     </button>
+                     <div class="collapse navbar-collapse justify-content-end" id="navigation">
+                         <ul class="nav navbar-nav mr-auto">
+                             <li class="nav-item">
+                                 <a href="/admindashboard" class="nav-link" data-toggle="dropdown">
+                                     <span class="d-lg-none">Dashboard</span>
+                                 </a>
+                             </li>
+                             
+                             
+                         </ul>
+                         <ul class="navbar-nav ml-auto">
+                             <li class="nav-item">
+                                 <a class="nav-link" href="/admindashboard">
+                                     <span class="no-icon">Account</span>
+                                 </a>
+                             </li>
+                             
+                             <li class="nav-item">
+                                 <a class="nav-link" href="/signin">
+                                     <span class="no-icon">Log out</span>
+                                 </a>
+                             </li>
+                         </ul>
+                     </div>
+                 </div>
+             </nav>
+                      <!-- End Navbar -->
+             <div class="content" style="background-image: url(/assets/blue.png); ">
+                 <div class="container-fluid">
+                     <div class="row">
+                        <div class="col-md-2">
+                        </div>
+                      
+
+<div class="col-md-6">
+<h2 class="text-center">Skills List</h2>
+                            </div>
+                            <div class="content table-responsive table-full-width">
+                                <table class="table table-hover table-striped">
+                                    <thead>
+                                        <th>Id</th>
+                                        <th>Name</th>
+                                        <th>Prerequisites</th>
+                                        <th>TOC</th>
+                                        <th>Created At</th>
+                                        <th>Updated At</th>
+                                        
+                                    </thead>
+                                    <tbody>
+                                       <tr *ngFor="let skill of skill">
+                                         <td>{{skill.id}}</td>
+                                         <td>{{skill.name}}</td>
+                                         <td>{{skill.prerequisites}}</td>
+                                         <td>{{skill.toc}}</td>
+                                         <td>{{skill.createdAt | date}}</td>
+                                         <td>{{skill.updatedAt | date}}</td>
+                                         <td><button class="btn btn-danger" (click)="deleteSkill(skill)"> Delete Skill</button></td>
+                                       </tr>
+                                        
+                                    </tbody>
+                                </table>
+</div>
+
+
+
+
+                         
+                             
+                         </div>
+                     </div>
+                     
+             </div>
+             <footer class="footer">
+                 <div class="container-fluid">
+                     <nav>
+                         <ul class="footer-menu">
+                             <li>
+                                 <a href="/klife">
+                                     Home
+                                 </a>
+                             </li>
+                             <li>
+                                 <a href="/abotus">
+                                     About Us
+                                 </a>
+                             </li>
+                             <li>
+                                 <a href="/contactus">
+                                     Contact Us
+                                 </a>
+                             </li>
+                             
+                         </ul>
+                         <p class="copyright text-center">
+                             ©
+                             <script>
+                                 document.write(new Date().getFullYear())
+                             </script>
+                             <a href="/klife">Klife</a>, made with love for a better web
+                         </p>
+                     </nav>
+                 </div>
+             </footer>
+         </div>
+     </div>
+     
+ </body>
+ </html>
+ 
+
+

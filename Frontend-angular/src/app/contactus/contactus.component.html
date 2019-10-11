@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<title>User Login</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="#home" class="w3-bar-item w3-button"><b>Mentor</b> On Demand</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+    
+      <a routerLink="/contactus" class="w3-bar-item w3-button">Contact</a>
+      
+<div class="w3-dropdown-hover">
+  <button class="w3-button">Login</button>
+  <div class="w3-dropdown-content w3-bar-block w3-border">
+    <a href="/signin" class="w3-bar-item w3-button">User</a>
+    <a href="/mentorlogin" class="w3-bar-item w3-button">Mentor</a>
+    <a href="/adminlogin" class="w3-bar-item w3-button">Admin</a>
+  </div>
+</div>
+
+     
+    </div>
+
+  </div>
+</div>
+
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+  <!-- Project Section -->
+  <div class="w3-container w3-padding-32">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact Us</h3>
+
+    <div class="container">
+  
+            <div class="row">     
+        
+              <div class="col-md-6">
+
+
+    <p>Lets connect with one another by just swing your contact details, or leave us a message:</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      
+    </div>
+    <div class="column">
+      <form>
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="India">India</option>
+          <option value="Russia">Russia</option>
+          <option value="Nepal">Nepal</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</body>
+</html>

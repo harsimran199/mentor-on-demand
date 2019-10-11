@@ -1,0 +1,137 @@
+  <!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<body style="background-image: url(/assets/pattern.png);min-height: 1000px;
+
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  position: relative;">
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="#home" class="w3-bar-item w3-button"><b>Mentor</b> On Demand</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+  
+      <a routerLink="/contactus" class="w3-bar-item w3-button">Contact</a>
+      
+<div class="w3-dropdown-hover">
+  <button class="w3-button">Login</button>
+  <div class="w3-dropdown-content w3-bar-block w3-border">
+    <a href="/signin" class="w3-bar-item w3-button">User</a>
+    <a href="/mentorlogin" class="w3-bar-item w3-button">Mentor</a>
+    <a href="/adminlogin" class="w3-bar-item w3-button">Admin</a>
+  </div>
+</div>
+
+    </div>
+
+  </div>
+</div>
+
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+  <!-- Project Section -->
+  <div class="w3-container w3-padding-32" >
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16" style="margin-left: 4%;">User SignUp</h3>
+
+    <div class="container">
+
+          <div class="row">     
+      
+            <div class="col-md-6">
+
+ <form>
+                      <div class="row row-space">
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="firstName">First Name:</label>
+                                <input [(ngModel)]="user.firstName" placeholder="First Name" name="firstName" class="form-control" id="firstName">
+                              </div>
+                  </div>
+                  <div class="col-6">
+                      <div class="form-group">
+                          <label for="lastName">Last Name:</label>
+                          <input [(ngModel)]="user.lastName" placeholder="Last name" name="lastName" class="form-control" id="lastName">
+                        </div>
+                  </div>
+                </div>
+                   
+
+                    <div class="form-group">
+                        <label for="email">Email address:</label>
+                        <input type="email" [(ngModel)]="user.email" placeholder="Email" name="email" class="form-control" id="email">
+                      </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" [(ngModel)]="user.password" placeholder="password" name="password" class="form-control" id="password">
+                    </div>
+                    <div class="row row-space">
+                        <div class="col-6">
+                    <div class="form-group">
+                        <label for="contactNumber">Contact No:</label>
+                        <input type="tel" [(ngModel)]="user.contactNumber" placeholder="Contact Number" name="contactNumber" class="form-control" id="contactNumber">
+                    </div>
+                    </div>
+                    <div class="col-6">
+                    <div class="form-group">
+                        <label for="regCode">Reg. Code</label>
+                        <input type="text" [(ngModel)]="user.regCode" placeholder="Registration Code" name="regCode" class="form-control" id="regCode">
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="row row-space">
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="role">Role</label>
+                            <input type="text" [(ngModel)]="user.role" placeholder="Role " name="role" class="form-control" id="role">
+                        </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="yearsofExperience">Years of Experience</label>
+                        <input type="text" [(ngModel)]="user.yearsofExperience" placeholder="0,1,2 etc. " name="yearsofExperience" class="form-control" id="yearsofExperience">
+                    </div>
+              </div>
+            </div>
+
+
+
+                    
+                  
+                    <div class="form-group">
+                        <label for="linkedinUrl">LinkedIn Url</label>
+                        <input type="text" [(ngModel)]="user.linkedinUrl" placeholder="linkedinUrl " name="linkedinUrl" class="form-control" id="linkedinUrl">
+                    </div>
+                  
+                    
+                  
+                    <button class="btn btn-success" (click)="createUser()">Sign Up</button>
+                    <h3>Do You already Have an account..?
+                        <a href="/signin">Sign In Here
+                        </a>
+                     </h3>
+                  </form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
+
+
+

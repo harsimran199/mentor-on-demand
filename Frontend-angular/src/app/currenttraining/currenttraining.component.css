@@ -1,0 +1,17 @@
+.w3-right{
+    margin-right: 10px;
+  }
+  
+  
+  body {
+   background-image: url("/assets/yellowuser.png");
+  min-height: 1000px;
+  
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    position: relative;
+  }
+  
